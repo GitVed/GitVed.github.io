@@ -679,6 +679,12 @@ section {
     color: var(--primary);
 }
 
+.project-links-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
 .project-link.disabled {
     color: var(--text-muted);
     cursor: not-allowed;
