@@ -45,11 +45,11 @@ body {
 
 /* Animated Background */
 .animated-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: -1;
     overflow: hidden;
     background: var(--bg-dark);
@@ -118,6 +118,8 @@ nav {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem 0;
+    /* Safe area for phone notch */
+    padding-top: max(1rem, env(safe-area-inset-top));
     transition: all 0.3s ease;
 }
 
@@ -982,15 +984,19 @@ footer p {
         display: none;
     }
 
+    .nav-container {
+        padding: 0 1rem;
+    }
+
     .nav-links {
         gap: 0.5rem;
         font-size: 0.85rem;
     }
 
     .hero {
-        padding: 10rem 1.5rem 4rem;
+        padding: 9rem 1.5rem 4rem;
         /* Extra spacing on mobile to prevent squishing */
-        padding-top: max(10rem, calc(10rem + env(safe-area-inset-top)));
+        padding-top: max(9rem, calc(6rem + env(safe-area-inset-top)));
         padding-bottom: max(4rem, calc(4rem + env(safe-area-inset-bottom)));
         min-height: 100vh;
     }
