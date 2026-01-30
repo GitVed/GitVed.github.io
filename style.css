@@ -29,8 +29,11 @@
 
 html {
     scroll-behavior: smooth;
-    /* Prevent black gaps on iOS */
-    background: hsl(230, 20%, 10%);
+    /* Purple gradient fallback for all browsers */
+    background:
+        radial-gradient(ellipse at top right, rgba(138, 99, 210, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(79, 70, 229, 0.15) 0%, transparent 50%),
+        hsl(230, 20%, 10%);
 }
 
 body {
@@ -55,7 +58,12 @@ body {
     min-height: 100vh;
     z-index: -1;
     overflow: hidden;
-    background: var(--bg-dark);
+    /* Purple gradient background */
+    background:
+        radial-gradient(ellipse at top right, rgba(138, 99, 210, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(79, 70, 229, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at center, rgba(147, 51, 234, 0.15) 0%, transparent 70%),
+        hsl(230, 20%, 10%);
 }
 
 .gradient-orb {
