@@ -37,15 +37,17 @@ body {
     color: var(--text-primary);
     background: var(--bg-dark);
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* Animated Background */
 .animated-bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     z-index: -1;
     overflow: hidden;
     background: var(--bg-dark);
@@ -185,7 +187,7 @@ nav.scrolled {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 7rem 2rem 4rem;
+    padding: 8rem 2rem 4rem;
     position: relative;
 }
 
@@ -978,13 +980,8 @@ footer p {
     }
 
     .hero {
-        padding: 5rem 1rem 3rem;
+        padding: 8rem 1.5rem 4rem;
         min-height: 100vh;
-    }
-
-    /* Fix background on mobile */
-    .animated-bg {
-        position: absolute;
     }
 
     .hero-buttons {
