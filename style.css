@@ -40,7 +40,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-dark);
+    /* Transparent so animated-bg purple gradient shows through */
+    background: transparent;
     overflow-x: hidden;
     position: relative;
     min-height: 100%;
