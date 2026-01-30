@@ -950,7 +950,8 @@ footer p {
     position: fixed;
     pointer-events: none;
     z-index: 9999;
-    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    transform: translate(-50%, -50%);
 }
 
 .cursor {
